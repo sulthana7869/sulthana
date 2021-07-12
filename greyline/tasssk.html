@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script>
+function MyFunction() {
+    var first, second;
+    first = document.getElementById("firstname").value;
+    second = document.getElementById("lastname").value;
+    
+    document.GetElementById("here").InnerHTML = first;
+    document.GetElementById("here").InnerHTML = second;
+}</script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+First name:<br>
+<input type="text" name="firstname">
+<br>
+Last name:<br>
+<input type="text" name="lastname">
+<br>
+<input type="button" value="Send" onclick="MyFunction()">
+    <div id="here"></div>    
+    
+<body>
+</body>
+</html>

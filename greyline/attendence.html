@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <script>
+   function attendence() {
+   var result= "";
+   var result2= "";
+   if (attform.sulthana.checked == true){
+     result += "sulthana is present today"+'<br>';
+   }else{
+     result2 += "sulthana is absent today"+'<br>';
+   }
+   if (attform.ajay.checked == true){
+    result += "ajay is present today"+'<br>';
+   }else{
+     result2 += "ajay is absent today"+'<br>';
+   }
+   if (attform.manikanta.checked == true){
+    result += "manikanta is present today"+'<br>';
+   }else{
+    result2 += "manikanta is absent today"+'<br>';
+   }
+   if (attform.nishanth.checked == true){
+     result += "nishanth is present today"+'<br>';
+   }else{
+     result2 += "nishanth is absent today"+'<br>';
+   }
+   if (attform.praneeth.checked == true){
+     result += "praneeth is present today"+'<br>';
+   }else{
+     result2 += "praneeth is absent today"+'<br>';
+   }
+  if (attform.santhosh akanti.checked == true){
+     result += "santhosh akanti is present today+'<br>'";
+   }else{
+      result2 += "santhosh akanti is absent today"+'<br>';
+   }
+  if (attform.prasanna sai.checked == true){
+    result += "prasanna sai is present today"+'<br>';
+   }else{
+     result2 += "prasanna sai is absent today"+'<br>';
+   }
+  if (attform.m raju.checked == true){
+     result += "m raju is present today"+'<br>';
+   }else{
+     result2 += "m raju is absent today"+'<br>';
+   }
+  if  (attform.manideep.checked == true){
+     result += "manideep is present today"+'<br>';
+   }else {
+     result2 += "manideep is absent today"+'<br>';
+   }
+ document.getElementById("demo").innerHTML=result;
+ document.getElementById("demo2").innerHTML=result2;
+ }
+ </script>
+
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+<h1>emp list</h1>
+<form name="attform">
+<input type="checkbox" name="sulthana" onchange="attendence()" />sulthana
+<br/>
+<input type="checkbox" name="ajay" onchange="attendence()" />ajay
+<br/>
+<input type="checkbox" name="manikanta" onchange="attendence()" />manikanta
+<br/>
+<input type="checkbox" name="nishanth" onchange="attendence()" />nishanth
+<br/>
+<input type="checkbox" name="praneeth" onchange="attendence()" />praneeth
+<br/>
+<input type="checkbox" name="santhosh akanti" onchange="attendence()" />santosh akanti
+<br/>
+<input type="checkbox" name="prasanna sai" onchange="attendence()" />prasanna sai
+<br/>
+<input type="checkbox" name="m raju" onchange="attendence()" />m raju
+<br/>
+<input type="checkbox" name="manideep" onchange="attendence()" />manideep
+<br/></br></br>
+<h2><u>EMP PRESENT LIST</u></h2><br/>
+<span id="demo"></span><br/>
+<h2><u>EMP ABSENT LIST</u></h2></br>
+<span id="demo2"></span>
+</form>
+</body>
+</html>

@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script>
+function attendance() {
+    var result = "";
+    if (frmAttendance.chkAjay.checked== true){ 
+        result +="Ajay is PresentTtoday..</br>";
+    }else {
+        result += "Ajay is Absent Today...";
+    }
+     if (frmAttendance.chkSulthana.checked== true){
+        result +="Sulthana is PresentTtoday..</br>";
+    }else {
+        result += "Sulthana is AbsentTtoday...";
+    }
+     if (frmAttendance.chkRaju.checked== true){
+        result +="Raju is Present Today..</br>";
+    }else {
+        result += "Raju is Absent Today...";
+    }
+     if (frmAttendance.chkSai.checked== true){
+        result +="Sai is Present Today..</br>";
+    }else {
+        result += "Sai is Absent Today...";
+    }
+     if (frmAttendance.chkManideep.checked== true){
+        result +="Manideep is Present Today..</br>";
+    }else {
+        result += "Manideep is Absent Today...";
+    }
+    document.getElementById("result").innerHTML = result;
+}
+</script>
+    <meta charset="utf-8" />
+    <title></title>
+    </head>
+<body>
+ <form name="frmAttendance">
+ <span id="result"></span>
+ <input type="checkbox" name="chkAjay" onchange="attendance()" />Ajay
+<br/>
+<input type="checkbox" name="chkSulthana" onchange="attendance()" />sulthana
+<br/>
+<input type="checkbox" name="chkRaju" onchange="attendance()" />raju
+<br/>
+<input type="checkbox" name="chkSai" onchange="attendance()" />sai
+<br/>
+<input type="checkbox" name="chkManideep" onchange="attendance()" />manideep
+<br/>
+</body>
+</html>

@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script>
+function calculatebill(units){
+    if (units <= 100)
+    {
+        return units * 10;
+    }
+    else if(units <= 200)
+    {
+        return(100 * 10)+(units - 100)*15;
+    }
+    else if(units < = 300)
+    {
+        return(100 * 10)+(100 * 15)+(units - 200)*20;
+    }
+    else if (units > 300)
+    {
+        return(100 * 10)+(100 *15)+(100 * 20)+(units-300)*25
+    }
+    return 0;
+}
+var units=250;
+document.write(calculatebill(units));
+</script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+<form>
+<table border=10 align="center">
+<tr>
+<th>meter id</th>
+<td>
+<input type="text" name="meterid" placeholder="enter meter id" >
+</td>
+</tr>
+<tr>
+<th>no of units</th>
+<td>
+<input type="text" name="noofunits" placeholder="enter no of  units" onclik="checkbill(units)">
+</td>
+</tr>
+<tr>
+<th>bill</th>
+<td>
+<input type="text" name="bill" placeholder="toatal bill is" >
+</td>
+</tr>
+<tr>
+<th colspan=2>
+<input type="button" value="checkbill">
+<span id="units"></span>
+</th>
+</tr>
+</form>
+
+</body>
+</html>

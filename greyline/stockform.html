@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script>
+function shw(){
+    var stockid,itemname,quantity,price,totalamount;
+    stockid=stockform.stockid.value;
+    itemname=stockform.itemname.value;
+    quantity=parseInt(stockform.quantity.value;);
+    price=parseInt(stockform.price.value;);
+    totalamount=quantity*price;
+    stockform.totalamount.value=totalamount;
+}
+</script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body onload="shw()"    >
+<center>
+<h2>pricing system</h2>
+<form name="stockform">
+<table border="2">
+<tr>
+<th>stock id</th>
+<td> 
+<input type="number" name="stockid" autofocus/>
+</td>
+</tr>
+<tr>
+<th>item name</th>
+<td> 
+<input type="text" name="itemname">
+</td>
+</tr>
+<tr>
+<th>quantity</th>
+<td> 
+<input type="number" name="quantatiy">
+</td>
+</tr>
+<tr>
+<th>price</th>
+<td> 
+<input type="number" name="price" onclick="shw()"/>
+</td>
+</tr>
+<tr>
+<th>total amount</th>
+<td> 
+<input type="number" name="totalamount">
+</td>
+</tr>
+</table>
+</form>
+</center>
+
+
+</body>
+</html>

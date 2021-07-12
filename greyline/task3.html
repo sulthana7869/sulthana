@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script>
+        function show() {
+        if (namefrm.first name.value==""){
+            document.getElementById("err1").innerHTML="PLEASE ENTER FIRSTNAME.."
+            return;
+            } else{
+            document.getElementById("err1").innerHTM="";
+            }
+        }
+            var firstName, lastName, fullname;
+            firstName =namefrm.firstname.value;
+            lastname=namefrm.lastname.value;
+            fullname =firstname+" "+ lastname;
+            namefrm.fullname.value= fullname;
+        }
+    </script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form name="namefrm">
+        <table border="3" align="center">
+            <tr>
+                <th colspan="2">
+                    name Form
+                </th>
+            </tr>
+            <tr>
+                <th>First Name</th>
+                <td>
+                    <input type="text" autofocus name="firstname"/> 
+                    <span id="err1"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>last name</th>
+                <td>
+                    <input type="text" name="lastname"/> 
+                    <span id="err2"></span>
+                </td>
+            </tr>
+            <tr>
+                <th>full name</th>
+                <td>
+                    <input type="text" name="fullname"/>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <input type="button" onclick="Show" value="show"/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="reset" value="reset" />
+                </th>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

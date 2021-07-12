@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script>
+function show(){
+var result="";
+var today=new Date();
+var fullyear=today.getFullYear();
+var future=new Date("february 15, "+fullyear);
+var diff=future.getTime() - today.getTime();
+document.getElementById("result").innerHTML=result;
+}
+</script>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body onload="show()">
+<span id="result"></span>
+
+
+</body>
+</html>
